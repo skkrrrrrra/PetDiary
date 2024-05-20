@@ -2,7 +2,7 @@ using FluentMigrator;
 using FluentMigrator.Expressions;
 using FluentMigrator.Infrastructure;
 
-namespace Diary.Persistence.Common;
+namespace PetDiary.Persistence.Common;
 
 public abstract class SqlMigration : IMigration
 {

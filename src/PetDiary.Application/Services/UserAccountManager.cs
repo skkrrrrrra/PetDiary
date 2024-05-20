@@ -15,8 +15,8 @@ using PetDiary.Domain.Entities.Identity;
 using PetDiary.Domain.Entities;
 using PetDiary.Domain.Constants;
 using PetDiary.Domain.Configuration;
-using Diary.Persistence;
-using Diary.Persistence.Common;
+using PetDiary.Persistence;
+using PetDiary.Persistence.Common;
 
 namespace PetDiary.Application.Services
 {

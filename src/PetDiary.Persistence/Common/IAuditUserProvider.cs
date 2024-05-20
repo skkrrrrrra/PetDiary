@@ -1,4 +1,4 @@
-namespace Diary.Persistence.Common
+namespace PetDiary.Persistence.Common
 {
 
     public interface IAuditUserProvider

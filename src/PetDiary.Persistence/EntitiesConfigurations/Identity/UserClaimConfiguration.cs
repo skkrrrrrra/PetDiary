@@ -1,9 +1,8 @@
 using PetDiary.Domain.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PetDiary.Domain.Entities.Identity;
 
-namespace Diary.Persistence.EntitiesConfigurations.Identity;
+namespace PetDiary.Persistence.EntitiesConfigurations.Identity;
 
 public class UserClaimConfiguration : IEntityTypeConfiguration<UserClaim>
 {

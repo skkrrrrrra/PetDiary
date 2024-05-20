@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using PetDiary.Domain.Entities.Identity;
 using PetDiary.Domain.Entities;
 using PetDiary.Domain.Entities.Audit;
+using PetDiary.Persistence.Models;
+using PetDiary.Persistence.Common;
 using PetDiary.Persistence.EntitiesConfigurations.Identity;
-using Diary.Persistence.Models;
-using Diary.Persistence.Common;
 
-namespace Diary.Persistence;
+namespace PetDiary.Persistence;
 
 public class PostgreDbContext : IdentityDbContext<User, Role, long, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
 {
@@ -27,7 +27,12 @@ public class PostgreDbContext : IdentityDbContext<User, Role, long, UserClaim, U
     public DbSet<Audit> Audits => Set<Audit>();
     public DbSet<AuditMetaData> AuditMetaData => Set<AuditMetaData>();
     public DbSet<Comment> Comments => Set<Comment>();
-    public DbSet<PetDiary.Domain.Entities.Diary> Diary => Set<Diary>();
+    public DbSet<Diary> Diaries => Set<Diary>();
+    public DbSet<Note> Notes => Set<Note>();
+    public DbSet<Sticker> Stickers => Set<Sticker>();
+    public DbSet<PastedSticker> PastedStickers => Set<PastedSticker>();
+    public DbSet<StickerPack> StickerPacks => Set<StickerPack>();
+    public DbSet<UserSettings> UserSettings => Set<UserSettings>();
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PetDiary.Domain.Entities.Audit;
 
-namespace Diary.Persistence.EntitiesConfigurations;
+namespace PetDiary.Persistence.EntitiesConfigurations;
 
 public class AuditConfiguration : IEntityTypeConfiguration<Audit>
 {

@@ -3,7 +3,7 @@ using FluentMigrator.Runner;
 using FluentMigrator.Runner.Processors;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Diary.Persistence.Common;
+namespace PetDiary.Persistence.Common;
 
 public static class ServiceCollectionExtensions
 {

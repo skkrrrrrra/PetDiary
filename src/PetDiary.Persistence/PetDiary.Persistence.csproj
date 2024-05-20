@@ -4,7 +4,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<RootNamespace>Diary.Persistence</RootNamespace>
+		<RootNamespace>PetDiary.Persistence</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -24,7 +24,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\PetDiary.Domain\PetDiary.Domain.csproj" />
 	  <ProjectReference Include="..\PetDiary.Domain\PetDiary.Domain.csproj" />
 	</ItemGroup>
 

@@ -1,7 +1,7 @@
-﻿using Diary.Persistence.Common;
+﻿using PetDiary.Persistence.Common;
 using FluentMigrator;
 
-namespace Diary.Persistence.Migrations
+namespace PetDiary.Persistence.Migrations
 {
     [Migration(3, "Audit and AuditMetaData tables")]
     public class AuditTables : SqlMigration

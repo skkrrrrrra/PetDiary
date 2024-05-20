@@ -1,5 +1,5 @@
-﻿using Diary.Persistence;
-using PetDiary.Application.Services.Interfaces;
+﻿using PetDiary.Application.Services.Interfaces;
+using PetDiary.Persistence;
 
 namespace PetDiary.Application.Services
 {

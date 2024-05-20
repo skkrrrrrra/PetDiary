@@ -5,7 +5,7 @@ using PetDiary.Domain.Entities.Audit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace Diary.Persistence.Common;
+namespace PetDiary.Persistence.Common;
 
 internal static class InternalExtensions
 {

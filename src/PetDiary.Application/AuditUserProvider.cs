@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
-using Diary.Persistence.Common;
+using PetDiary.Persistence.Common;
+
 namespace PetDiary.Application;
 
 public class AuditUserProvider : IAuditUserProvider

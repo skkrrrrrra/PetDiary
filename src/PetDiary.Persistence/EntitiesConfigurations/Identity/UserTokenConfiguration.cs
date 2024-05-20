@@ -2,7 +2,7 @@ using PetDiary.Domain.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Diary.Persistence.EntitiesConfigurations.Identity;
+namespace PetDiary.Persistence.EntitiesConfigurations.Identity;
 
 public class UserTokenConfiguration : IEntityTypeConfiguration<UserToken>
 {

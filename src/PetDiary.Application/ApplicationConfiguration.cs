@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Diary.Persistence.Common;
+﻿using PetDiary.Persistence.Common;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace PetDiary.Application
 {

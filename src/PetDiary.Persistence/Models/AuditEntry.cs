@@ -1,12 +1,10 @@
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using Diary.Persistence.Common;
+using PetDiary.Persistence.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using PetDiary.Domain.Entities;
 using PetDiary.Domain.Entities.Audit;
 
-namespace Diary.Persistence.Models;
+namespace PetDiary.Persistence.Models;
 
 public class AuditEntry
 {
