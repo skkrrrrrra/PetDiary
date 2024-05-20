@@ -26,8 +26,8 @@ public class UserProfile : BaseEntity
     public string LastName { get; set; }
 
     [Column(Columns.Base64Image)]
-    public string Base64ProfileImage { get; set; }
+    public string Base64ProfileImage { get; set; } = string.Empty;
 
-    [Column(Columns.Base64Image)]
-    public string Quote { get; set; }
+    [Column(Columns.Quote)]
+    public string Quote { get; set; } = string.Empty;
 }

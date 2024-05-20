@@ -4,14 +4,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetDiary.Domain.Entities
 {
+    [Table(Tables.PastedSticker)]
     public class PastedSticker : BaseEntity
     {
         [Column(Columns.StickerId)]
-        public int StickerId { get; set; }
+        public long StickerId { get; set; }
 
 
         [Column(Columns.NoteId)]
-        public int NoteId { get; set; }
+        public long NoteId { get; set; }
 
 
         [Column(Columns.XAxisIndentation)]

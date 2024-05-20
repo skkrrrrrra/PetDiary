@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PetDiary.Domain.Entities;
+using PetDiary.Domain.Enums;
+using PetDiary.Persistence.Common;
 
 namespace PetDiary.Web.Controllers
 {
@@ -7,11 +10,11 @@ namespace PetDiary.Web.Controllers
     [Route("api/diary"), Authorize]
     public class DiaryController : ControllerBase
     {
-        public DiaryController() 
+        private readonly IAuditUserProvider _auditUserProvider;
+
+        public DiaryController(IAuditUserProvider auditUserProvider) 
         {
+            _auditUserProvider = auditUserProvider;
         }
-
-
-
     }
 }

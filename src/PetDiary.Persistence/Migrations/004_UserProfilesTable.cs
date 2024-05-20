@@ -19,6 +19,8 @@ create table user_profiles (
     last_name text not null,
     status     integer not null default 0,
     username   text unique not null,
+    base_64_image text,
+    quote text,
     constraint pk_user_profiles
         primary key (id)
 );

@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetDiary.Domain.Entities
 {
+    [Table(Tables.Comment)]
     public class Comment : BaseEntity
     {
         [Column(Columns.Content)]
@@ -12,11 +13,11 @@ namespace PetDiary.Domain.Entities
 
         [Column(Columns.NoteId)]
         [ForeignKey(nameof(Note))]
-        public int NoteId { get; set; }
+        public long NoteId { get; set; }
 
         [Column(Columns.WriterId)]
         [ForeignKey(nameof(Writer))]
-        public int WriterId { get; set; }
+        public long WriterId { get; set; }
 
         public UserProfile Writer { get; set; }
         public Note Note { get; set; }

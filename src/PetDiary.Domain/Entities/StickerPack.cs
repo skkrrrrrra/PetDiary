@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetDiary.Domain.Entities
 {
+    [Table(Tables.StickerPack)]
     public class StickerPack : BaseEntity
     {
         [Column(Columns.Title)]

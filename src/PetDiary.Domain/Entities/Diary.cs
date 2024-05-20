@@ -5,8 +5,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetDiary.Domain.Entities
 {
+    [Table(Tables.Diary)]
     public class Diary : BaseEntity
     {
+        [ForeignKey(nameof(UserProfile))]
+        [Column(Columns.UserId)]
+        public long UserId { get; set; }
+        public UserProfile UserProfile { get; set; }
+
+
         [Column(Columns.Title)]
         public string Title { get; set; }
 

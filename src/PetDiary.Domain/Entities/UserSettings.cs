@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetDiary.Domain.Entities
 {
+    [Table(Tables.UserSettings)]
     public class UserSettings : BaseEntity
     {
         [Column(Columns.UserId)]
