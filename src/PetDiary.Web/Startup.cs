@@ -1,4 +1,6 @@
 using System.Text;
+using Diary.Persistence;
+using Diary.Persistence.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.IdentityModel.Tokens;
@@ -8,8 +10,6 @@ using PetDiary.Application.Services;
 using PetDiary.Domain.Configuration;
 using PetDiary.Domain.Entities.Identity;
 using PetDiary.Infrastructure;
-using PetDiary.Persistence;
-using PetDiary.Persistence.Common;
 using PetDiary.Web.Middleware;
 namespace PetDiary.Web;
 

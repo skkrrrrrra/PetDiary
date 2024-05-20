@@ -1,9 +1,9 @@
-namespace PetDiary.Persistence.Common
+namespace Diary.Persistence.Common
 {
 
-	public interface IAuditUserProvider
-	{
-		long? GetUserId();
-		string GetUserRole();
-	}
+    public interface IAuditUserProvider
+    {
+        long? GetUserId();
+        string GetUserRole();
+    }
 }

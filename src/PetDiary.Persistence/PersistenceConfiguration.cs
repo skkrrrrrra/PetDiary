@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PetDiary.Persistence
+namespace Diary.Persistence
 {
     public static class PersistenceConfiguration
     {

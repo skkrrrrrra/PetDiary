@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace PetDiary.Persistence.EntitiesConfigurations.Identity;
+namespace Diary.Persistence.EntitiesConfigurations.Identity;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {

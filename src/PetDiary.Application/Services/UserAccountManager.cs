@@ -8,8 +8,6 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using PetDiary.Application.Common;
 using PetDiary.Application.Models.User;
-using PetDiary.Persistence;
-using PetDiary.Persistence.Common;
 using PetDiary.Application.Responses.Auth;
 using PetDiary.Application.Requests.Auth;
 using PetDiary.Domain.Entities.Results;
@@ -17,6 +15,8 @@ using PetDiary.Domain.Entities.Identity;
 using PetDiary.Domain.Entities;
 using PetDiary.Domain.Constants;
 using PetDiary.Domain.Configuration;
+using Diary.Persistence;
+using Diary.Persistence.Common;
 
 namespace PetDiary.Application.Services
 {

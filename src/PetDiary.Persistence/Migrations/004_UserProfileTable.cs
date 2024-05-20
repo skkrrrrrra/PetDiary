@@ -1,12 +1,12 @@
+using Diary.Persistence.Common;
 using FluentMigrator;
-using PetDiary.Persistence.Common;
 
-namespace PetDiary.Persistence.Migrations;
+namespace Diary.Persistence.Migrations;
 
 [Migration(4, "User profile table")]
 public class UserProfileTable : SqlMigration
 {
-	protected override string GetUpSql(IServiceProvider services) => @"
+    protected override string GetUpSql(IServiceProvider services) => @"
 
 create table user_profiles (
 
@@ -27,4 +27,4 @@ create table user_profiles (
     protected override string GetDownSql(IServiceProvider services) => @"
 drop table if exists user_profiles;";
 
-} 
+}

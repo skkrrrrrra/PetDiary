@@ -1,12 +1,12 @@
+using Diary.Persistence.Common;
 using FluentMigrator;
-using PetDiary.Persistence.Common;
 
-namespace PetDiary.Persistence.Migrations;
+namespace Diary.Persistence.Migrations;
 
 [Migration(1, "Identity tables")]
 public class IdentityTables : SqlMigration
 {
-	protected override string GetUpSql(IServiceProvider services) => @"
+    protected override string GetUpSql(IServiceProvider services) => @"
 -- Users --
 create table identity_users
 (
