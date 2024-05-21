@@ -22,5 +22,8 @@ namespace PetDiary.Domain.Entities
 
         [Column(Columns.DiaryType)]
         public DiaryType DiaryType { get; set; }
+
+
+        public virtual List<Note> Notes { get; set; }
     }
 }

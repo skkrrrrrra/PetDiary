@@ -7,16 +7,16 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using PetDiary.Application.Common;
-using PetDiary.Application.Models.User;
 using PetDiary.Application.Responses.Auth;
 using PetDiary.Application.Requests.Auth;
-using PetDiary.Domain.Entities.Results;
 using PetDiary.Domain.Entities.Identity;
 using PetDiary.Domain.Entities;
 using PetDiary.Domain.Constants;
 using PetDiary.Domain.Configuration;
 using PetDiary.Persistence;
 using PetDiary.Persistence.Common;
+using PetDiary.Application.Responses.Results;
+using PetDiary.Application.Models.UserModels;
 
 namespace PetDiary.Application.Services
 {
@@ -57,7 +57,6 @@ namespace PetDiary.Application.Services
         {
             var user = Map<User>(request);
             user!.UserProfile = Map<UserProfile>(request);
-            user.UserProfile!.Username = request.Username;
 
             var result = await CreateAsync(user, request.Password);
 
@@ -104,14 +103,12 @@ namespace PetDiary.Application.Services
                 signingCredentials: credentials);
 
             var userInfo = await _dbContext.UserProfiles.FirstAsync(p => p.Id == user.Id, CancellationToken);
-            var userData = Map<UserData>(userInfo); // создаем userData из userInfo
+            var userData = Map<UserProfileModel>(userInfo); // создаем userData из userInfo
             userData!.MapFrom(user); // дозаполняем userData из user
-            userData.Role = roles.First();
 
             var result = new LoginResponse
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(tokenDescriptor),
-                UserData = userData
             };
 
             return new SuccessResult<LoginResponse>(result);

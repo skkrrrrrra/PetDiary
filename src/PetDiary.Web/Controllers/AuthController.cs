@@ -4,7 +4,7 @@ using PetDiary.Application.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using PetDiary.Domain.Entities.Results;
+using PetDiary.Application.Responses.Results;
 
 namespace PetDiary.Web.Controllers
 {

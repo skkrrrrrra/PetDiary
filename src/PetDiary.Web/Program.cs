@@ -1,3 +1,4 @@
+using FluentMigrator;
 using FluentMigrator.Runner;
 
 namespace PetDiary.Web;
@@ -26,6 +27,8 @@ public static class Program
             runner.MigrateUp();
         }
         else
+        {
             host.Run();
+        }
     }
 }

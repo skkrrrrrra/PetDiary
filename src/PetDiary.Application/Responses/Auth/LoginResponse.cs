@@ -1,9 +1,9 @@
-using PetDiary.Application.Models.User;
+using PetDiary.Application.Models.UserModels;
 
 namespace PetDiary.Application.Responses.Auth;
 
 public sealed class LoginResponse
 {
 	public string Token { get; set; } = string.Empty;
-	public UserData UserData { get; set; }
+	public UserProfileModel UserData { get; set; }
 }

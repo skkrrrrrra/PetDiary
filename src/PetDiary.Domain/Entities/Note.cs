@@ -19,7 +19,7 @@ namespace PetDiary.Domain.Entities
 
 
         public virtual Diary Diary { get; set; }
-        public virtual List<Sticker> Stickers { get; set; }
-        public virtual List<Comment> Comments { get; set; }
+        public virtual List<PastedSticker>? Stickers { get; set; }
+        public virtual List<Comment>? Comments { get; set; }
     }
 }

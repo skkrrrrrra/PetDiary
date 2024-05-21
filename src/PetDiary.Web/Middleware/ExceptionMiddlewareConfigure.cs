@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using PetDiary.Domain.Entities.Results;
+using PetDiary.Application.Responses.Results;
 
 namespace PetDiary.Web.Middleware
 {
